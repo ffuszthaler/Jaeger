@@ -3,6 +3,7 @@
 #include "Core.h";
 
 namespace Jaeger {
+
 	class JAEGER_API Application
 	{
 	public:
