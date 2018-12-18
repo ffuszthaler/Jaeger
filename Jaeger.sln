@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{12B992E3-4450-4C93-9F7B-AE17627AD302}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jaeger", "Jaeger\Jaeger.vcxproj", "{3C9F6DAA-6D5B-4164-A90C-9CD38DED79AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C9F6DAA-6D5B-4164-A90C-9CD38DED79AD}.Debug|x64.ActiveCfg = Debug|x64
+		{3C9F6DAA-6D5B-4164-A90C-9CD38DED79AD}.Debug|x64.Build.0 = Debug|x64
+		{3C9F6DAA-6D5B-4164-A90C-9CD38DED79AD}.Release|x64.ActiveCfg = Release|x64
+		{3C9F6DAA-6D5B-4164-A90C-9CD38DED79AD}.Release|x64.Build.0 = Release|x64
+		{12B992E3-4450-4C93-9F7B-AE17627AD302}.Debug|x64.ActiveCfg = Debug|x64
+		{12B992E3-4450-4C93-9F7B-AE17627AD302}.Debug|x64.Build.0 = Debug|x64
+		{12B992E3-4450-4C93-9F7B-AE17627AD302}.Release|x64.ActiveCfg = Release|x64
+		{12B992E3-4450-4C93-9F7B-AE17627AD302}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB1E88D0-6AA2-47E3-B9B4-20A61F28AF07}
+	EndGlobalSection
+EndGlobal
