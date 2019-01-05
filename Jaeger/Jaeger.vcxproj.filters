@@ -4,6 +4,9 @@
     <Filter Include="Jaeger">
       <UniqueIdentifier>{133291BB-FFD3-BB91-E88E-CFE5D4CF42E2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Jaeger\Events">
+      <UniqueIdentifier>{976A5D1E-032B-D954-CC65-22D238E51D31}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Jaeger.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Jaeger\EntryPoint.h">
       <Filter>Jaeger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jaeger\Events\ApplicationEvent.h">
+      <Filter>Jaeger\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jaeger\Events\Event.h">
+      <Filter>Jaeger\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jaeger\Events\KeyEvent.h">
+      <Filter>Jaeger\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jaeger\Events\MouseEvent.h">
+      <Filter>Jaeger\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Jaeger\Log.h">
       <Filter>Jaeger</Filter>

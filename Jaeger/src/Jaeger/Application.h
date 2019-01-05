@@ -1,11 +1,11 @@
 #pragma once
 
-#include "Core.h";
+#include "Core.h"
+#include "Events/Event.h"
 
 namespace Jaeger {
 
-	class JAEGER_API Application
-	{
+	class JAEGER_API Application {
 	public:
 		Application();
 		virtual ~Application();

@@ -9,3 +9,5 @@
 #else
 	#error Jaeger only supports Window!
 #endif
+
+#define BIT(x) (1 << x)

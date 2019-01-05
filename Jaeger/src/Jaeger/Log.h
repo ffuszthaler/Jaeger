@@ -4,11 +4,11 @@
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Jaeger {
 
-	class JAEGER_API Log
-	{
+	class JAEGER_API Log {
 	public:
 		static void Init();
 
@@ -18,7 +18,6 @@ namespace Jaeger {
 		static std::shared_ptr<spdlog::logger> s_CoreLogger;
 		static std::shared_ptr<spdlog::logger> s_ClientLogger;
 	};
-
 }
 
 // Core log macros
