@@ -35,6 +35,8 @@
       <Filter>Jaeger</Filter>
     </ClInclude>
     <ClInclude Include="src\jgpch.h" />
+    <ClInclude Include="src\Jaeger\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Jaeger\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Jaeger</Filter>
     </ClCompile>
     <ClCompile Include="src\jgpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

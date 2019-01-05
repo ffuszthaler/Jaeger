@@ -9,6 +9,11 @@ workspace "Jaeger"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Jaeger/vendor/GLFW/include"
+
+include "Jaeger/vendor/GLFW"
+
 project "Jaeger"
 	location "Jaeger"
 	kind "SharedLib"
@@ -27,8 +32,14 @@ project "Jaeger"
 
 	includedirs {
     "%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+    "%{IncludeDir.GLFW}"
 	}
+
+  links {
+    "GLFW",
+    "opengl32.lib"
+  }
 
 	filter "system:windows"
 		cppdialect "C++17"

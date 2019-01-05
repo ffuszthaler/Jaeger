@@ -6,6 +6,8 @@
 #include <algorithm>
 #include <functional>
 
+#include "Jaeger/Log.h"
+
 #include <string>
 #include <sstream>
 #include <vector>
