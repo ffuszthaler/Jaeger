@@ -1,9 +1,7 @@
 #pragma once
 
+#include "jgpch.h"
 #include "Jaeger/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Jaeger {
 

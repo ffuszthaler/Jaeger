@@ -17,6 +17,9 @@ project "Jaeger"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+  pchheader "jgpch.h"
+  pchsource "Jaeger/src/jgpch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"

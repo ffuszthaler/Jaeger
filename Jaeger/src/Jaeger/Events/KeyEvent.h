@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Jaeger {
 
 	class JAEGER_API KeyEvent : public Event {
