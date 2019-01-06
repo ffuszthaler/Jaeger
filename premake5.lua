@@ -57,14 +57,17 @@ project "Jaeger"
 
 	filter "configurations:Debug"
 		defines "JG_DEBUG"
+    buildoptions "/MDd"
 		symbols "On"
 	
 	filter "configurations:Release"
 		defines "JG_RELEASE"
+    buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "JG_DIST"
+    buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -100,12 +103,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "JG_DEBUG"
+    buildoptions "/MDd"
 		symbols "On"
 	
 	filter "configurations:Release"
 		defines "JG_RELEASE"
+    buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "JG_DIST"
+    buildoptions "/MD"
 		optimize "On"

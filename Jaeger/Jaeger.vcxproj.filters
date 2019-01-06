@@ -7,6 +7,12 @@
     <Filter Include="Jaeger\Events">
       <UniqueIdentifier>{976A5D1E-032B-D954-CC65-22D238E51D31}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Jaeger.h" />
@@ -31,21 +37,39 @@
     <ClInclude Include="src\Jaeger\Events\MouseEvent.h">
       <Filter>Jaeger\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Jaeger\Layer.h">
+      <Filter>Jaeger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Jaeger\LayerStack.h">
+      <Filter>Jaeger</Filter>
+    </ClInclude>
     <ClInclude Include="src\Jaeger\Log.h">
       <Filter>Jaeger</Filter>
     </ClInclude>
+    <ClInclude Include="src\Jaeger\Window.h">
+      <Filter>Jaeger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\jgpch.h" />
-    <ClInclude Include="src\Jaeger\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Jaeger\Application.cpp">
       <Filter>Jaeger</Filter>
     </ClCompile>
+    <ClCompile Include="src\Jaeger\Layer.cpp">
+      <Filter>Jaeger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Jaeger\LayerStack.cpp">
+      <Filter>Jaeger</Filter>
+    </ClCompile>
     <ClCompile Include="src\Jaeger\Log.cpp">
       <Filter>Jaeger</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\jgpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
