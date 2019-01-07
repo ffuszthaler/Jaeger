@@ -11,8 +11,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Jaeger/vendor/GLFW/include"
+IncludeDir["Glad"] = "Jaeger/vendor/Glad/include"
 
 include "Jaeger/vendor/GLFW"
+include "Jaeger/vendor/Glad"
 
 project "Jaeger"
 	location "Jaeger"
@@ -33,11 +35,13 @@ project "Jaeger"
 	includedirs {
     "%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-    "%{IncludeDir.GLFW}"
+    "%{IncludeDir.GLFW}",
+    "%{IncludeDir.Glad}"
 	}
 
   links {
     "GLFW",
+    "Glad",
     "opengl32.lib"
   }
 
@@ -48,7 +52,8 @@ project "Jaeger"
 
 		defines {
 			"JG_PLATFORM_WINDOWS",
-			"JG_BUILD_DLL"
+			"JG_BUILD_DLL",
+      "GLFW_INCLUDE_NONE"
 		}
 	
 		postbuildcommands {
