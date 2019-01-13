@@ -18,6 +18,7 @@ class Sandbox : public Jaeger::Application {
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Jaeger::ImGuiLayer());
 	}
 
 	~Sandbox() {

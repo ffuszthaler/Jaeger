@@ -4,3 +4,6 @@
 [submodule "Jaeger/vendor/GLFW"]
 	path = Jaeger/vendor/GLFW
 	url = https://github.com/TheCherno/glfw.git
+[submodule "Jaeger/vendor/imgui"]
+	path = Jaeger/vendor/imgui
+	url = https://github.com/TheCherno/imgui.git
